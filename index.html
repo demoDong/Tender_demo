@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="src/css/public.css">
+	<link rel="stylesheet" href="src/css/index.css">
+	<script src="src/js/jquery-1.11.0.min.js"></script>
+	<script src="src/js/echarts.min.js"></script>
+	<script src="src/js/beijing.js"></script>
+	<script src="src/js/hebei.js"></script>
+	<script src="src/js/china.js"></script>
+	<script src="src/js/raphael-min.js"></script>
+	<script src="src/js/data.js"></script>
+	<script src="src/js/index.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="leftDiv">
+			<div class="leftTop">
+				<div class="leftTopTitle">
+					<div></div>
+                    <div>产业政策</div>
+				</div>
+				<div class="leftTopContent">
+					<marquee direction="up" scrollamount="4" scrolldelay="0" id="marDetail">
+					     <div class="bjZC">
+					     <span>北京市政策：</span>中央政治局通过《京津冀协同发展规划纲要》，推动京津冀协同发展成为国家战略，核心是有序疏解北京非首都功能。与此同时，因受环境、土地等因素制约，北京医药产业亟待疏解，其中确定化学原料药制造将在2017年年底前全部迁出北京。
+						</div>
+						<div class="czZC">
+						<span>沧州市政策：</span>到2020年，沧州市医药产业规模迅速壮大，发展目标为主营业务收入达到1000亿元，初步形成以渤海新区生物医药、原料药及中间体为主，开发区制剂及中成药、中国（沧州）医疗器械城及沧县药包材、河间中医药健康等产业联动发展的产业格局。
+						</div>
+						<div class="leftTopDetail">
+							<div class="detailLeft">
+								<div class="dtTitle">
+									<div>沧州培育主导产业TOP5</div>
+									<div></div>
+								</div>
+								<div class="dtBodyOne">
+									<div><span>产业</span><span>主营业务收入</span></div>
+									<div><span>原料药及中间体</span><span>240亿</span></div>
+									<div><span>生物医药</span><span>150亿</span></div>
+									<div><span>制剂及中成药</span><span>60亿</span></div>
+									<div><span>医疗器械</span><span>500亿</span></div>
+									<div><span>药包材</span><span>50亿</span></div>
+								</div>
+							</div>
+						    <div class="detailRight">
+								<div class="dtTitle">
+									<div>沧州壮大产业集群TOP5</div>
+									<div></div>
+								</div>
+						        <div class="dtBodyTwo">
+								<div>
+									<span>园区</span>
+									<span>企业数量</span>
+									<span>主营业务收入</span>
+								</div>
+								<div>
+									<span>渤海新区生物医药产业园</span>
+									<span>100家</span>
+									<span>220亿</span>
+								</div>
+								<div>
+									<span>市开发区</span>
+									<span>20家</span>
+									<span>40亿</span>
+								</div>
+								<div>
+									<span>河间市中医药</span>
+									<span>10家</span>
+									<span>50亿</span>
+								</div>
+								<div>
+									<span>沧县医疗器械</span>
+									<span>150家</span>
+									<span>300亿</span>
+								</div>
+								<div>
+									<span>沧县药包材产业</span>
+									<span>80家</span>
+									<span>30亿</span>
+								</div>
+						    </div>
+					    </div>
+                      </div>
+					</marquee >
+				</div>
+				<!-- <div class="leftTopDetail"> -->
+					<!-- <div class="detailLeft">
+						<div class="dtTitle">
+							<div>沧州培育主导产业TOP5</div>
+							<div></div>
+						</div>
+						<div class="dtBodyOne">
+							<div><span>产业</span><span>主营业务收入</span></div>
+							<div><span>原料药及中间体</span><span>240亿</span></div>
+							<div><span>生物医药</span><span>150亿</span></div>
+							<div><span>制剂及中成药</span><span>60亿</span></div>
+							<div><span>医疗器械</span><span>500亿</span></div>
+							<div><span>药包材</span><span>50亿</span></div>
+						</div>
+					</div>
+					<div class="detailRight">
+						<div class="dtTitle">
+							<div>沧州壮大产业集群TOP5</div>
+							<div></div>
+						</div>
+						<div class="dtBodyTwo">
+							<div>
+								<span>园区</span>
+								<span>企业数量</span>
+								<span>主营业务收入</span>
+							</div>
+							<div>
+								<span>渤海新区生物医药产业园</span>
+								<span>100家</span>
+								<span>220亿</span>
+							</div>
+							<div>
+								<span>市开发区</span>
+								<span>20家</span>
+								<span>40亿</span>
+							</div>
+							<div>
+								<span>河间市中医药</span>
+								<span>10家</span>
+								<span>50亿</span>
+							</div>
+							<div>
+								<span>沧县医疗器械</span>
+								<span>150家</span>
+								<span>300亿</span>
+							</div>
+							<div>
+								<span>沧县药包材产业</span>
+								<span>80家</span>
+								<span>30亿</span>
+							</div>
+						</div>
+					</div>
+ -->
+				<!-- </div> -->
+			</div>
+			<div class="leftBottom">
+				<div class="leftBottomTitle">
+					<div class="titleIco"></div>
+					<div class="titleList">
+					     <ul>
+					     	<li>沧州渤海新区生物医药产业园</li>
+					     	<li style="display:none;">生物医药产业园区对比模型</li>
+					     	<li style="display:none;">中国最佳生物医药产业园区</li>
+					     	<li style="display:none;">园区政策</li>
+					     </ul>
+                    </div>
+                    <div class="titleNum">
+						<ul>
+							<li data-id='0' onclick="qyLeftTurn(this)" class="active">1</li>
+							<li data-id='1' onclick="qyLeftTurn(this)">2</li>
+							<li data-id='2' onclick="qyLeftTurn(this)">3</li>
+							<li data-id='3' onclick="qyLeftTurn(this)">4</li>
+						</ul>
+                    </div>
+				</div>
+				<div class="leftBottomContent">
+					<ul>
+						<li>
+							<img src="src/images/沧州渤海新区生物医药产业园BG.png" alt="">
+							<div class="leftBottomContentOne" style="left:300px;top:72px">生物医药起步区</div>
+							<div class="leftBottomContentOne" style="left:67px;top:166px">生物医药研发区</div>
+							<div class="leftBottomContentOne" style="left:290px;top:230px">生物制药核心区</div>
+							<div class="leftBottomContentTwo" style="left:288px;top:120px">主要建设抗肿瘤、抗糖尿病、抗癫痫药物及中间体</div>
+							<div class="leftBottomContentTwo" style="left:57px;top:195px">通过与中国医学科学研究院北京生物医药研究中心、天津大学、北京大学、河北科技大学等合作，建设校企联合的生物医药产业孵化器</div>
+							<div class="leftBottomContentTwo" style="left:277px;top:260px">主要建设治疗心脑血管和精神病、抗肿瘤、头孢类等的医药制剂及现代中药和医药关联产业</div>
+							<div class="leftBottomContentThree" style="left:560px;top:49px">北京四环药业</div>
+							<div class="leftBottomContentThree" style="left:685px;top:89px">北京康辰药业</div>
+							<div class="leftBottomContentThree" style="left:559px;top:132px">北京维达药业</div>
+							<div class="leftBottomContentThree" style="width:214px;left:582px;top:179px">北京普瑞东方科技有限公司</div>
+						</li>
+						<li style="display:none;">
+							<div id="qyLeftRadarOne"></div>
+							<div id="qyLeftRadarTwo"></div>
+						</li>
+						<li style="display:none;" id="bestBiological"></li>
+						<li style="display:none;">
+							<div>
+								<div class="zcBtn zcBtnActive" onclick="zcBtnTurn(this)" data-id="0">专项资金</div>
+								<div class="zcBtn" onclick="zcBtnTurn(this)" data-id="1">税收奖励</div>
+								<div class="zcBtn" onclick="zcBtnTurn(this)" data-id="2">土地政策</div>
+								<div class="zcBtn" onclick="zcBtnTurn(this)" data-id="3">人才扶持</div>
+								<div class="zcBtn" style="margin-bottom:0px" onclick="zcBtnTurn(this)" data-id="4">互认政策</div>
+							</div>
+							<div id="zcBtnBody">"一是新药研发。对于国家一类新药、二类新药的研发，经有关科技主管部门审核后，在其取得新药证书和生产批件，并在区内进行生产的，给予100-300万元的专项资金支持。
+二是重点实验室。对于新建或搬迁的国家级实验室（中心）给予2000万元、省级实验室（中心），给予1000万元的建设资金支持，用于专项科研启动经费。
+三是重大科技项目。对于申报国家或河北省重大科技项目的企业，园区将全力支持，经有关科技部门批准后，可享受最高200-500万元的专项资金奖励
+"
+</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="centerDiv" > 
+		    <div id="canvas_container"></div>
+			<div class="centerTitle">区域协同发展</div>
+			<div class="centerContent">
+				<div class="centerTopMap">
+					<div class="bjMap">
+					   <div class="mapTitle">北京市</div>
+					   <div class="bgBg"><div id="bjMain"></div></div>
+					</div>
+					<div class="hbMap">
+					   <div class="mapTitle">河北省</div>
+					   <div class="hbBg"><div class="xaAd">雄安</div><div id="hbMain"></div></div>
+					</div>
+					<div class="chMap">
+                       <div class="mapTitle">中国</div>
+                         <div class="chBg"><div id="chMain"></div></div>
+					   </div>
+				</div>
+				<div class="centerBottomMap">
+					<div class="czMap">
+					    <div class="mapTitle">沧州市</div>
+						<img src="src/images/沧州市地图.png" alt="">
+					</div>
+					<div class="mapData">
+						<ul>
+							<li>
+							    <div>
+							    	 <img src="src/images/240亿z.png" alt="">
+								     <img class="redBg" src="src/images/Group 22 Copy 1.png" alt="">
+								     <img src="src/images/240亿.png" alt="">
+							    </div>
+							</li>
+							<li>
+							    <div>
+								    <img src="src/images/150亿z.png" alt="">
+									<img class="orangeBg" src="src/images/Group 22 Copy 2.png" alt="">
+								    <img src="src/images/150亿.png" alt="">
+							    </div>
+							</li>
+							<li>
+							     <div>
+								    <img src="src/images/60亿z.png" alt="">
+									<img class="greenBg" src="src/images/Group 22 Copy 3.png" alt="">
+								    <img src="src/images/60亿.png" alt="">
+							     </div>
+							</li>
+							<li>
+							     <div>
+							        <img src="src/images/500亿z.png" alt="">
+								    <img class="pinkBg" src="src/images/Group 22 Copy 4.png" alt="">
+							        <img src="src/images/500亿.png" alt="">
+							     </div>
+							</li>
+							<li>
+							      <div>
+							      	<img src="src/images/50亿z.png" alt="">
+								    <img class="blueBg" src="src/images/Group 22 Copy 5.png" alt="">
+								    <img src="src/images/50亿.png" alt="">
+							      </div>
+							</li>
+						</ul>
+					</div>
+					<div class="dataList">
+						<ul>
+							<li><img src="src/images/红色点icon.png" alt=""><span>原料药及中间体</span></li>
+							<li><img src="src/images/橙色点icon.png" alt=""><span>生物医药</span></li>
+							<li><img src="src/images/绿色点icon.png" alt=""><span>制剂及中成药</span></li>
+							<li><img src="src/images/紫色点icon.png" alt=""><span>医疗器械</span></li>
+							<li><img src="src/images/蓝色点icon.png" alt=""><span>药包材</span></li>
+						</ul>
+					</div>
+					<div class="buttonDiv">
+						<button id="cenLeftBtn">非首都功能疏解</button>
+						<button id="cenRightBtn" class="clickClass">沧州培育医药产业</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="rightDiv">
+			<div class="rightTop">
+				<div class="rightTopTitle">
+					<div></div>
+                    <div>企业收入/利润</div>
+				</div>
+				<div class="rightTopContent">
+					<div>
+						<div class="nameTitle">收入</div>
+						<div id="qyRightTreemapOne"></div>
+						<div class="nameTitle">利润</div>
+						<div id="qyRightTreemapTwo"></div>
+					</div>
+					<div>
+						<div class="nameTitle">企业名录</div>
+						<div class="nameList">
+							<ul>
+								<li class="listTitle">
+									<span>企业名称</span>
+									<span>收入</span>
+									<span>利润</span>
+								</li>
+								<li>
+									<span>中国石化</span>
+									<span>18.3万</span>
+									<span>10.0万</span>
+								</li>
+								<li>
+									<span>中国石化</span>
+									<span>18.3万</span>
+									<span>10.0万</span>
+								</li>
+								<li>
+									<span>中国石化</span>
+									<span>18.3万</span>
+									<span>10.0万</span>
+								</li>
+								<li>
+									<span>中国石化</span>
+									<span>18.3万</span>
+									<span>10.0万</span>
+								</li>
+								<li>
+									<span>中国石化</span>
+									<span>18.3万</span>
+									<span>10.0万</span>
+								</li>
+								<li>
+									<span>中国石化</span>
+									<span>18.3万</span>
+									<span>10.0万</span>
+								</li>
+								<li>
+									<span>中国石化</span>
+									<span>18.3万</span>
+									<span>10.0万</span>
+								</li>
+								<li>
+									<span>中国石化</span>
+									<span>18.3万</span>
+									<span>10.0万</span>
+								</li>
+								<li>
+									<span>中国石化</span>
+									<span>18.3万</span>
+									<span>10.0万</span>
+								</li>
+								<li>
+									<span>中国石化</span>
+									<span>18.3万</span>
+									<span>10.0万</span>
+								</li>
+								<li>
+									<span>中国石化</span>
+									<span>18.3万</span>
+									<span>10.0万</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rightBottom">
+				<div class="rightBottomTitle">
+					<div></div>
+                    <div>重点企业与产品</div>
+				</div>
+				<div class="rightBottomContent">
+					<div>
+						<div class="leftButton" onclick="turnNavigationLR(this)" data-id="left"></div>
+						<div class="turnNavigationDiv">
+							<div class="turnNavigation"></div>
+						</div>
+						<div class="rightButton" onclick="turnNavigationLR(this)" data-id="right"></div>
+						<div id="qyRightGraph"></div>
+					</div>
+					<div>
+						<div class="qyRightListOne"></div>
+						<div class="qyRightListTwo"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<script src="src/js/line.js"></script>
+</body>
+</html>
